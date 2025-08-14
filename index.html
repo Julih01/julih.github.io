@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julius T. Muchembi - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Favicon (optional) -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    /* Base styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background-color: #0a2f3c; /* dark teal */
+      margin: 0;
+      padding: 0;
+      color: #e0f7fa; /* soft off-white */
+      scroll-behavior: smooth;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      animation: fadeIn 1.2s ease-in-out;
+      background: linear-gradient(135deg, #0f4c5c, #13475a); /* gradient header */
+      color: #e0f7fa;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #00bfa5; /* teal accent border */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin: 20px 0 5px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #b2ebf2; /* light teal */
+    }
+
+    /* Section */
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #00bfa5; /* teal accent */
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      color: #e0f7fa;
+    }
+
+    .skills, .contact, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    /* Cards */
+    .card {
+      background: linear-gradient(145deg, #13475a, #0f3d4f); /* card gradient */
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      border: 2px solid transparent;
+    }
+
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+      border-color: #ffd700; /* gold accent on hover */
+    }
+
+    .card i {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ffd700; /* gold accent */
+    }
+
+    .contact a {
+      text-decoration: none;
+      color: #ffd700; /* gold links */
+      font-weight: bold;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 20px;
+      background: linear-gradient(135deg, #0f4c5c, #13475a);
+      margin-top: 40px;
+      color: #e0f7fa;
+    }
+
+    /* Fade-in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive Typography */
+    @media (min-width: 768px) {
+      header h1 { font-size: 3rem; }
+      h2 { font-size: 1.6rem; }
+      header p { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="julius_profile.jpg" alt="Julius T. Muchembi">
+  <h1>Julius T. Muchembi</h1>
+  <p>Customer-focused Technical Support • Remote-ready</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>
+    I’m a disciplined, adaptable professional with hands-on experience in customer service, workshop operations, and technical troubleshooting. 
+    With a background in automotive engineering and growing skills in Python, I’m passionate about solving problems and delivering excellent support. 
+    I’m seeking opportunities to bring my expertise and energy to remote technical support roles.
+  </p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card">
+      <i class="fas fa-headset"></i>
+      <p>Customer Service</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-tools"></i>
+      <p>Technical Troubleshooting</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-boxes-stacked"></i>
+      <p>Inventory Management</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-comments"></i>
+      <p>Communication & Teamwork</p>
+    </div>
+    <div class="card">
+      <i class="fab fa-python"></i>
+      <p>Python (Learning)</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <i class="fas fa-lock"></i>
+      <p><strong>VISION Secure Messaging</strong><br>
+      Encrypted messaging app prototype with mood-based emoji detection.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-globe"></i>
+      <p><strong>Portfolio Website</strong><br>
+      Personal online CV hosted on GitHub Pages.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <div class="contact">
+    <div class="card">
+      <i class="fas fa-envelope"></i>
+      <p><a href="mailto:juliuzhitlah@gmail.com">Email Me</a></p>
+    </div>
+    <div class="card">
+      <i class="fab fa-linkedin"></i>
+      <p><a href="https://linkedin.com/in/julius-muchembi" target="_blank">LinkedIn</a></p>
+    </div>
+    <div class="card">
+      <i class="fab fa-whatsapp"></i>
+      <p><a href="https://wa.me/254727735877" target="_blank">WhatsApp</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Julius T. Muchembi • Designed with ❤️
+</footer>
+
+</body>
+</html>
